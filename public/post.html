@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>post Categories with ajax</h1>
+    <hr/>
+    <div>
+        <label>CategroryName</label>
+        <input id="categoryName">
+    </div>
+    <div>
+        <label>Descriptionk</label>
+        <textarea id="description"></textarea>
+        <br>
+        <button onclick="PostCategory()">postCategory</button>
+        <button onclick="clearPage()">ClearPage</button>
+    </div>
+    <div id="error"></div>
+    <dir id="container"></dir>
+    <script src="./post.js"></script>
+    <script src="./jquery-3.x-git.js"></script>
+</body>
+
+</html>

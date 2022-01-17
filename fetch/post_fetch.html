@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Post with fetch</title>
+</head>
+
+<body>
+    <h1>Post Categories with fetch</h1>
+    <hr/>
+    <div>
+        <label>CategoryName</label>
+        <input type="text" id="categoryName">
+        <br/>
+        <label>Description</label>
+        <input type="text" id="description">
+    </div>
+    <button onclick="postCategoriesWithFetch()">Show Categoty</button>
+    <button onclick="postCategoriesWithFetchAsync()">Show Categoty (Async)</button>
+    <dir id="container"></dir>
+    <script src="./post_fetch.js">
+    </script>
+</body>
+
+
+</html>

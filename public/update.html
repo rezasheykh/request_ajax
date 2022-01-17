@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Update</title>
+</head>
+
+<body>
+    <h1> Update with ajax</h1>
+    <hr/>
+    <br>
+    <div>
+        <label>categoryId</label>
+        <input type="number" id="categoryId">
+    </div>
+    <div>
+        <label>categoryName</label>
+        <input type="text" id="categoryName">
+    </div>
+    <div>
+        <label>description</label>
+        <input type="text" id="description">
+    </div>
+    <div>
+        <button id="UpdateCategory" class="btn_box" onclick="UpdateCategory()">Update Category</button>
+        <button id="ClearPage" onclick="ClearPage()"> ClearPage</button>
+    </div>
+    <div>
+        <div id="result"></div>
+        <div id="error"></div>
+
+    </div>
+    <script src="./update.js"></script>
+</body>
+
+</html>

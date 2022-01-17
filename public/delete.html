@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Delete Categories with ajax</h1>
+    <hr/>
+    <div>
+        <div>
+            <label>CategroryId</label>
+            <input type="number" id="categoryId">
+        </div>
+        <div>
+            <!-- <label>CategoryName</label> -->
+            <!-- <textarea id="categoryName"></textarea> -->
+            <!-- <br> -->
+            <button onclick="deleteCategory()">postCategory</button>
+            <br>
+            <button onclick="clearPage()">ClearPage</button>
+        </div>
+        <div id="error"></div>
+        <dir id="container"></dir>
+        <script src="./delete.js"></script>
+        <script src="../jQuery/jquery-3.x-git.js"></script>
+</body>
+
+</html>

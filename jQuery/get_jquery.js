@@ -1,8 +1,21 @@
+var apiurl = "http://127.0.0.1:3000/api/Categories"
 const getDataWithGet = () => {
-    let url = "http://127.0.0.1:3000/api/Categories"
-    $.get(url, (data) => {
+    $.get(apiurl, (data) => {
         // $('#container').html(JSON.stringify(data))
         gbox(data)
+    })
+}
+const getDataWithAjax = () => {
+    $.ajax(apiurl, {
+        type: "GET",
+        timeout: 3000,
+        success: function(data) {
+            $('#container').html(JSON.stringify(data))
+        },
+        reeor: function(error) {
+            $('error').html(error)
+
+        }
     })
 }
 
